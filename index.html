@@ -9,151 +9,86 @@
   <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
   <script>
     async function main() {
-      await liff.init({ liffId: "2001622527-4r2E3pwG" })
+      await liff.init({ liffId: "2001622527-WKx4pV3J" })
       await liff.shareTargetPicker([
         {
           "type": "flex",
           "altText": "Share Target Picker",
           "contents": {
-            "type": "bubble",
-            "hero": {
-              "type": "image",
-              "url": "https://developers-resource.landpress.line.me/fx/img/01_1_cafe.png",
-              "size": "full",
-              "aspectRatio": "20:13",
-              "aspectMode": "cover",
-              "action": {
-                "type": "uri",
-                "uri": "https://line.me/"
-              }
-            },
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "Brown Cafe",
-                  "weight": "bold",
-                  "size": "xl"
-                },
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "margin": "md",
-                  "contents": [
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://developers-resource.landpress.line.me/fx/img/review_gray_star_28.png"
-                    },
-                    {
-                      "type": "text",
-                      "text": "4.0",
-                      "size": "sm",
-                      "color": "#999999",
-                      "margin": "md",
-                      "flex": 0
-                    }
-                  ]
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "margin": "lg",
-                  "spacing": "sm",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "color": "#aaaaaa",
-                          "size": "sm",
-                          "flex": 1
-                        },
-                        {
-                          "type": "text",
-                          "text": "Flex Tower, 7-7-4 Midori-ku, Tokyo",
-                          "wrap": true,
-                          "color": "#666666",
-                          "size": "sm",
-                          "flex": 5
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Time",
-                          "color": "#aaaaaa",
-                          "size": "sm",
-                          "flex": 1
-                        },
-                        {
-                          "type": "text",
-                          "text": "10:00 - 23:00",
-                          "wrap": true,
-                          "color": "#666666",
-                          "size": "sm",
-                          "flex": 5
-                        }
-                      ]
-                    }
-                  ]
+            "type": "flex",
+            "altText": "การค้นหาด้วย Gemini",
+            "contents": {
+              "type": "bubble",
+              "hero": {
+                "type": "image",
+                "url": "https://lh5.googleusercontent.com/d/10F8c-SK3kaKuyl7KkKE10qsTy4RnVfmm",
+                "size": "full",
+                "aspectRatio": "1:1",
+                "aspectMode": "cover",
+                "action": {
+                  "type": "uri",
+                  "uri": "https://liff.line.me/2001622527-WKx4pV3J"
                 }
-              ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "link",
-                  "height": "sm",
-                  "action": {
-                    "type": "uri",
-                    "label": "Share",
-                    "uri": "https://liff.line.me/2001622527-4r2E3pwG"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "การค้นหาด้วย Gemini",
+                    "weight": "bold",
+                    "size": "xl"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "lg",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "baseline",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "แตะปุ่มด้านล่างเพื่อแชร์",
+                            "wrap": true,
+                            "color": "#666666",
+                            "size": "lg",
+                            "flex": 5
+                          }
+                        ]
+                      }
+                    ]
                   }
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "margin": "sm"
-                }
-              ],
-              "flex": 0
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "height": "sm",
+                    "action": {
+                      "type": "uri",
+                      "label": "แชร์บอท",
+                      "uri": "https://liff.line.me/2001622527-WKx4pV3J"
+                    }
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [],
+                    "margin": "sm"
+                  }
+                ],
+                "flex": 0
+              }
             }
           }
         }
@@ -163,4 +98,3 @@
     main()
   </script>
 </body>
-</html>
